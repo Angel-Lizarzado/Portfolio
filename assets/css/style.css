@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
 body {
   line-height: 26px;
   font-size: 16px;
@@ -371,7 +376,6 @@ body {
 }
 
 
-
 .personal_text .basic_info li:last-child {
   margin-bottom: 0px;
 }
@@ -404,7 +408,7 @@ body {
 
 .personal_text .personal_social li:hover a {
   background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-  background-image: -webkit-linear-gradient(0deg, #c7d3c5 0%, #4b595a 100%);
+  background-image: -webkit-linear-gradient(0deg, #c7d3c5 0%, #63e6f0 100%);
   background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
 }
 
@@ -418,7 +422,6 @@ body {
   padding-right: 30px;
   padding-bottom: 30px;
 }
-
 
 .welcome_inner .welcome_img img {
   margin-top: -30px;
@@ -458,8 +461,6 @@ body {
   background-color: #222222;
   box-shadow: 1.5px 1.5px 0px 0px #2c2b2b;
 }
-
-
 
 .wel_item i {
   padding-bottom: 15px;
@@ -516,7 +517,6 @@ body {
 /* Area de mi info
 =========================================================================================== */
 
-
 .mytabs_area {
   margin-top: 2em;
   background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(69, 86, 102, 1) 0%, rgba(34, 34, 34, 1) 90%);
@@ -547,7 +547,6 @@ body {
   border: 1px solid #9ab5f5;
   background: rgba(255, 255, 255, 0.1);
 }
-
 
 
 .tabs_inner .nav.nav-tabs li a.active {
@@ -641,7 +640,6 @@ body {
   margin-top: 2em;
   margin-bottom: 35px;
 }
-
 
 .news_widget .input-group .sub-btn {
   border-radius: 0px;
