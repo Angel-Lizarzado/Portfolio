@@ -1,6 +1,6 @@
 ; (function ($) {
     "use strict"
-
+    let imageUrl = 'https://i.ibb.co/M9QZc1L/Screenshot-10.png';
 
     var nav_offset_top = $('header').height() + 50;
     /*-------------------------------------------------------------------------------
