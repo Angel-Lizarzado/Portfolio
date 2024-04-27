@@ -20,7 +20,15 @@ body {
   transition: background-color 0.4s, all 0.3s linear;
 }
 
-.header_area .navbar {
+.logo {
+  color: #fff;
+}
+
+.logo:hover {
+  color: #00c2f3;
+}
+
+.header .header_area .navbar {
   background: transparent;
   padding: 0px;
   border: 0px;
@@ -40,7 +48,7 @@ body {
 }
 
 .header_area .navbar .nav .nav-item .nav-link:hover {
-  color: #005f69;
+  color: #08acbe;
 }
 
 .header_area .navbar .search {
@@ -79,6 +87,10 @@ body {
 .top_menu .header_social li {
   display: inline-block;
   margin-right: 15px;
+}
+
+.navbar-log {
+  color: #fff;
 }
 
 .home_banner_area {
