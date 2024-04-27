@@ -1,13 +1,9 @@
-html {
+body {
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
-}
-
-body {
-  line-height: 26px;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  font-family: "Roboto", sans-serif;
-  font-weight: normal;
+  line-height: 26px;
   color: #cecece;
   display: flex;
   flex-direction: column;
@@ -15,8 +11,6 @@ body {
   text-align: center;
 }
 
-/* Area del Header
-============================================================================================ */
 .header_area {
   position: absolute;
   width: 100%;
@@ -38,7 +32,7 @@ body {
 }
 
 .header_area .navbar .nav .nav-item .nav-link {
-  font: 500 12px/120px "Roboto", sans-serif;
+  font-weight: 500;
   text-transform: uppercase;
   color: #fff;
   padding: 0px;
@@ -47,42 +41,6 @@ body {
 
 .header_area .navbar .nav .nav-item .nav-link:hover {
   color: #005f69;
-}
-
-
-
-@media (min-width: 992px) {
-  .header_area .navbar .nav .nav-item.submenu ul {
-    position: absolute;
-    top: 120%;
-    left: 0px;
-    min-width: 200px;
-    text-align: left;
-    opacity: 0;
-    transition: all 300ms ease-in;
-    visibility: hidden;
-    display: block;
-    border: none;
-    padding: 0px;
-    border-radius: 0px;
-  }
-}
-
-
-@media (min-width: 992px) {
-  .header_area .navbar .nav .nav-item.submenu:hover ul {
-    visibility: visible;
-    opacity: 1;
-    top: 100%;
-  }
-}
-
-.header_area .navbar .nav .nav-item.submenu:hover ul .nav-item {
-  margin-top: 0px;
-}
-
-.header_area .navbar .nav .nav-item:last-child {
-  margin-right: 0px;
 }
 
 .header_area .navbar .search {
@@ -123,12 +81,6 @@ body {
   margin-right: 15px;
 }
 
-
-body {
-  background: #121212;
-}
-
-
 .home_banner_area {
   position: relative;
   z-index: 1;
@@ -160,17 +112,15 @@ body {
 }
 
 .home_banner_area .banner_inner .banner_content .media .d-flex {
-  padding-right: 125px;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.d-flex img {
-  mask-image: linear-gradient(black 60%, transparent);
-}
-
-.home_banner_area .banner_inner .banner_content .media .media-body {
-  text-align: center;
-
+.home_banner_area .banner_inner .banner_content .media .d-flex img {
+  mask-image: linear-gradient(black 80%, transparent);
+  /* align-items: center;
+  position: center; */
 }
 
 .blog_banner {
@@ -297,9 +247,6 @@ body {
   color: #766dff;
 }
 
-
-/* Area de mi perfil personal
-============================================================================================ */
 .profile_area .col-lg-7 {
   vertical-align: middle;
   align-self: center;
@@ -356,7 +303,6 @@ body {
   color: #b4bac6;
 }
 
-
 .personal_text .basic_info li a i {
   position: absolute;
   left: 0px;
@@ -374,7 +320,6 @@ body {
   font-size: 20px;
   color: #86e7ff;
 }
-
 
 .personal_text .basic_info li:last-child {
   margin-bottom: 0px;
@@ -399,10 +344,9 @@ body {
   width: 53px;
   display: inline-block;
   border-radius: 8px;
-  /* padding-left:30%; */
   font-size: 45px;
   background: linear-gradient(to right, #766dff 0%, #86e7ff 70%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -412,9 +356,10 @@ body {
   background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
 }
 
+body {
+  background-color: #222222;
+}
 
-/* Area de presentacion
-============================================================================================ */
 .welcome_inner .welcome_img {
   background: #eeeeee;
   margin-left: 40px;
@@ -441,7 +386,6 @@ body {
   max-width: 495px;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 40px;
-
 }
 
 .wel_item {
@@ -466,7 +410,7 @@ body {
   padding-bottom: 15px;
   font-size: 45px;
   background: linear-gradient(to right, #766dff 0%, #86e7ff 70%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -486,7 +430,7 @@ body {
   padding-left: 40px;
   font-size: 20px;
   background: linear-gradient(to right, #766dff 0%, #86e7ff 70%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -512,10 +456,6 @@ body {
   height: 10px;
   border-radius: 10px;
 }
-
-
-/* Area de mi info
-=========================================================================================== */
 
 .mytabs_area {
   margin-top: 2em;
@@ -547,7 +487,6 @@ body {
   border: 1px solid #9ab5f5;
   background: rgba(255, 255, 255, 0.1);
 }
-
 
 .tabs_inner .nav.nav-tabs li a.active {
   background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
@@ -591,18 +530,6 @@ body {
   transform: translateX(-50%);
 }
 
-.tabs_inner .tab-content .tab-pane .list li span:before {
-  content: '';
-  height: 7px;
-  width: 7px;
-  background: #fff;
-  border-radius: 50%;
-  position: absolute;
-  left: 52%;
-  top: 4px;
-  transform: translateX(-50%);
-}
-
 .tabs_inner .tab-content .tab-pane .list li:last-child {
   margin-bottom: 0px;
 }
@@ -628,39 +555,29 @@ body {
   margin-bottom: 0px;
 }
 
-/* Area del footer
-============================================================================================ */
-
 .footer_area {
   background: #000;
   text-align: center;
 }
 
-.f_title {
-  margin-top: 2em;
-  margin-bottom: 35px;
+.f_widget {
+  text-align: center;
 }
 
-.news_widget .input-group .sub-btn {
-  border-radius: 0px;
-  background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-  background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-  background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-  outline: none !important;
-  box-shadow: none !important;
-  padding: 0px;
-  border: none;
-  width: 42px;
-  cursor: pointer;
-  color: #fff;
+.social_widget ul {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.social_widget p {
-  font-size: 14px;
-  line-height: 24px;
-  font-family: "Roboto", sans-serif;
-  color: #777777;
-  margin-bottom: 10px;
+.social_widget li {
+  display: inline-block;
+  margin-right: 17px;
+}
+
+.social_widget li:last-child {
+  margin-right: 0px;
 }
 
 .social_widget .list li {
@@ -673,7 +590,6 @@ body {
   font-size: 25px;
   transition: all 300ms linear 0s;
 }
-
 
 .social_widget .list li:last-child {
   margin-right: 0px;
